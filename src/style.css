@@ -1,0 +1,82 @@
+:root {
+    --espresso: #2b1b12;
+    --dark-wood: #3b2619;
+    --wood: #68462e;
+    --coffee: #8b6546;
+    --cream: #f2dfbf;
+    --paper: #fbf1dd;
+    --paper-dark: #d8bd94;
+    --gold: #d8b56b;
+    --sage: #a9b394;
+    --forest: #56674e;
+    --text: #38271d;
+    --text-soft: #6d5747;
+    --white: #fffaf0;
+    --danger: #a34b3d;
+    --shadow: rgba(25, 15, 9, .26);
+    --glass: rgba(43, 27, 18, .30);
+    --glass-strong: rgba(43, 27, 18, .62);
+    --line: rgba(255, 248, 232, .13);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: auto;
+}
+
+nav{
+    display : flex;
+    justify-content: space-between; 
+    gap: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: --coffee;
+    border: none;
+    cursor: pointer;
+    transition: 2s ease;
+
+}
+
+button:hover{
+    background-color: --dark-wood;
+    border: 1px solid --coffee;
+    transform: scale(1.2);
+    
+}
+
+button:active{
+    transform: scale(0.96);
+    background-color: --coffee;
+    border: none;
+}
+
+
+.hero{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+h2{
+    font-size: 2rem;
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 2vh;
+    color: var(--text-soft);
+    
+}
+
+
