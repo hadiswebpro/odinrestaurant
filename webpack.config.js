@@ -15,6 +15,7 @@ export default {
     plugins: [
         new HtmlWebpackPlugin({
             template: "./src/template.html",
+            favicon: "./src/favicon/favicon.ico",
         }),
     ],
 
@@ -30,5 +31,11 @@ export default {
                 type: "asset/resource",
             },
         ],
+    },
+
+    devtool: "eval-source-map",
+
+    devServer: {
+        watchFiles: ["./src/template.html"],
     },
 };
